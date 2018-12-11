@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Country</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+   <div class="container">
+   <div class="row  justify-content-center  ">
+    <form action="../server/index.php" method="post">
+       <label class="labels">Name country</label>
+        <input id="nameCountry" class="form-control" name = "nameCountry" type="text" placeholder="Enter country" >
+        <div id="errorCountry"></div>
+        <label class="labels">Continent</label>
+        <input id="continentCountry" class="form-control" name = "continentCountry" type="text" placeholder="Enter continent">
+        <button type="submit" class="btn btn-primary mt-3">Enter</button>
+    </form>
+    </div>
+    <div class="row justify-content-center">
+    <a href="countryTable.php"><button type="submit" class="btn btn-primary mt-3 " >Check table</button></a>
+    </div>
+    </div>
+    
+    <srcipt src = "../js/postInfo.js">
+    
+    </srcipt>
+</body>
+</html>
