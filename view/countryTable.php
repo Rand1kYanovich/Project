@@ -16,8 +16,9 @@
   </thead>
   <tbody>
    <?php 
-   include_once $_SERVER['DOCUMENT_ROOT']."/server/getCountry.php";
-   foreach($country as $countryItem):?>
+    include_once $_SERVER['DOCUMENT_ROOT']."/server/getcountry.php";
+    $country = getCountry($dbh);//Получаем данные из БД в массив
+    foreach($country as $countryItem): //Делаем вывод всех значений массива ?>
     <tr>
       <th scope="row"><?php echo $countryItem['id']; ?></th>
       <td><?php echo $countryItem['name']; ?></td>

@@ -1,6 +1,7 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT']."/server/PDO.php";
+include $_SERVER['DOCUMENT_ROOT']."/server/pdo.php";
 
+//Функция для получения значений из БД в массив $countryList
 function getCountry($dbh){
     $countryList = array();
     $result = $dbh->query("SELECT id,name,continent FROM Country");

@@ -5,3 +5,4 @@ $opt = [
     PDO::ATTR_EMULATE_PREPARES   => false,
 ];
    $dbh = new PDO("mysql:dbname=testbd;host=localhost","root","",$opt);
+//Устанавливаем соединение с БД
